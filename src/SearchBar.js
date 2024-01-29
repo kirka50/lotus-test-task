@@ -7,7 +7,7 @@ function SearchBar() {
     const [personsView, setPersonsView] = useState([])
     const matchPerson = (input, person) => {
         const inputSplit = input.split(' ')
-        if (inputSplit[0] == person.name && inputSplit[1] == person.surName) {
+        if (inputSplit[0] === person.name && inputSplit[1] === person.surName) {
             return true
         }
     }
@@ -18,9 +18,10 @@ function SearchBar() {
             if (matchPerson(e.target.value, person)) {
                 setPersonView(person)
             }
-            if (e.target.value == person.name) {
+            if (e.target.value === person.name) {
                 setPersonsView(persons => [...persons,person])
             }
+            return undefined
 
         })
     };
