@@ -4,6 +4,7 @@ const personsList = persons.persons
 function SearchBar() {
     const [searchInput, setSearchInput] = useState('')
     const [personView, setPersonView] = useState('')
+    const [personsView, setPersonsView] = useState([])
     const matchPerson = (input, person) => {
         const inputSplit = input.split(' ')
         if (inputSplit[0] == person.name && inputSplit[1] == person.surName) {
@@ -16,6 +17,9 @@ function SearchBar() {
         personsList.map((person) =>{
             if (matchPerson(e.target.value, person)) {
                 setPersonView(person)
+            }
+            if (e.target.value == person.name) {
+                setPersonsView(persons => [...persons,person])
             }
 
         })
@@ -34,7 +38,7 @@ function SearchBar() {
                <br/>
                {personsList.map((person)=> <div key={person.id}>{person.name} {person.surName}</div>)}
            </div>
-            Найденная персона:
+            Найденная персона (Строгий поиск):
            <ul>
                <li>
                    Имя: {personView.name}
@@ -52,6 +56,26 @@ function SearchBar() {
                    Вес: {personView.weight}
                </li>
            </ul>
+
+           Найденные персоны:
+           {personsView.map((person) =>
+               <ul>
+               <li>
+                   Имя: {person.name}
+               </li>
+               <li>
+                   Фамилия: {person.surName}
+               </li>
+               <li>
+                   Возраст: {person.age}
+               </li>
+               <li>
+                   Высота: {person.height}
+               </li>
+               <li>
+                   Вес: {person.weight}
+               </li>
+           </ul>)}
        </div>
 
     );
