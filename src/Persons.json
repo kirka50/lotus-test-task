@@ -1,0 +1,84 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Kirill",
+      "surName": "Reznikov",
+      "age": 21,
+      "height": 160,
+      "weight": 90
+    },
+    {
+      "id": 2,
+      "name": "Kirill",
+      "surName": "Antropov",
+      "age": 22,
+      "height": 180,
+      "weight": 91
+    },
+    {
+      "id": 3,
+      "name": "Roman",
+      "surName": "Kurbanov",
+      "age": 41,
+      "height": 122,
+      "weight": 70
+    },
+    {
+      "id": 4,
+      "name": "Oleg",
+      "surName": "Ivanov",
+      "age": 26,
+      "height": 130,
+      "weight": 12
+    },
+    {
+      "id": 5,
+      "name": "Roman",
+      "surName": "Gromut",
+      "age": 25,
+      "height": 162,
+      "weight": 91
+    },
+    {
+      "id": 6,
+      "name": "Nikita",
+      "surName": "Gabbasov",
+      "age": 11,
+      "height": 188,
+      "weight": 98
+    }
+    ,{
+      "id": 7,
+      "name": "Ivan",
+      "surName": "Ivanov",
+      "age": 41,
+      "height": 460,
+      "weight": 92
+    },
+    {
+      "id": 8,
+      "name": "Dante",
+      "surName": "DMC",
+      "age": 21,
+      "height": 160,
+      "weight": 90
+    },
+    {
+      "id": 9,
+      "name": "Nikita",
+      "surName": "Buyanov",
+      "age": 31,
+      "height": 150,
+      "weight": 50
+    },
+    {
+      "id": 10,
+      "name": "Hayao",
+      "surName": "Miadzyaki",
+      "age": 51,
+      "height": 150,
+      "weight": 60
+    }
+  ]
+}
