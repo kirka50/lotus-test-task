@@ -57,7 +57,7 @@ function SearchBar() {
                </li>
            </ul>
 
-           Найденные персоны:
+           Найденные персоны (Нестрогий поиск):
            {personsView.map((person) =>
                <ul>
                <li>
