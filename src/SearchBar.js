@@ -12,6 +12,9 @@ function SearchBar() {
         }
     }
     const handleChange = (e) => {
+        if(e.target.value.length === 0) {
+            setPersonsView([])
+        }
         e.preventDefault();
         setSearchInput(e.target.value)
         personsList.map((person) =>{
